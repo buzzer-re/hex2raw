@@ -1,6 +1,6 @@
 # hex2raw
 
-This little and useful tool parses firmwares code in .hex format into a dump and readable format for Reversing.
+This little and useful tool parses firmwares code in .hex format into a dump and readable format for futures manipulation.
 
 
 ## Why ?
@@ -78,6 +78,10 @@ boards:
 You can help this project by adding news entries in this file and creating a pull request for each one :)
 
 
+
+## TODO
+
+- [ ] Convert dump files into a .hex files 
 
 Thanks!
 
