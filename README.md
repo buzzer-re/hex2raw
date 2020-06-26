@@ -57,18 +57,18 @@ va       false
 
 #### Going further
 
-Loading with [Cutter](https://github.com/radareorg/cutter) (Radare2 Front End)
+Loading with [Cutter](https://github.com/radareorg/cutter):
 
 ![](assets/Cutter.png)
 
 
 # Expanding this
 
-You can help expading this tool parsing capabilites by adding new entries in the ***prefix_address_size.yml*** file, this tool loads that config files to know where the addressing starts and end
+You can help expading this tool parsing capabilites by adding new entries in the ***prefix_address_size.yml*** file, this tool loads that config files to know where the addressing starts and ends.
 
 ####  Example: ATMEGA328P
 
-The address size of an atmega328p has an 32k memory addressing/size, so the first 8 digits is the address part (10004000 for example) and we have the ":" mark that indicate that a new line started, so we need supply to our configuration file a address size of  ***9***
+The address size of an atmega328p has an 32k memory addressing/size, so the first 8 digits is the address part (10004000 for example) and we have the ":" mark that indicate that a new line started, so we need supply to our configuration file a address size of  ***9***.
 
 ```yaml
 boards:
