@@ -56,7 +56,10 @@ if __name__ == '__main__':
 
 	with open(args.hexfile, "rb") as hex_file:
 		for line in hex_file.readlines():
-			raw_code += binascii.unhexlify(line[address_size:-2])
+			line = line.rstrip()
+			# Only data section, removes checksum
+			data = line[address_size:-2]
+			raw_code += binascii.unhexlify(data)
 
 
 		with open(args.output, "wb") as raw:
