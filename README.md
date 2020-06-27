@@ -5,7 +5,7 @@ This little and useful tool parses firmwares code in .hex format into a dump and
 
 ## Why ?
 
-When you compile a firmware for some microcontrollers, like AVR board or Arduino (Which is also an AVR), a .hex file with the code in string format will be generated for softwares like [avrdude](https://www.nongnu.org/avrdude/) be able to read and flash correctly in the board.
+When you compile a firmware for some microcontrollers, like AVR board, a .hex file with the code in string format will be generated for softwares like [avrdude](https://www.nongnu.org/avrdude/) be able to read and flash correctly in the board, but we can't manipulate this .hex file in disassemblies tools.
 
 ## .hex example
 
@@ -68,7 +68,7 @@ You can help expading this tool parsing capabilites by adding new entries in the
 
 ####  Example: ATMEGA328P
 
-The address size of an atmega328p has an 32k memory addressing/size, so the first 8 digits is the address part (10004000 for example) and we have the ":" mark that indicate that a new line started, so we need supply to our configuration file a address size of  ***9***.
+The atmega328p has an 32k memory addressing/size, so the first 8 digits is the address part (10004000 for example) and we have the ":" mark that indicate that a new line started, so we need supply to our configuration file a address size of  ***9***.
 
 ```yaml
 boards:
