@@ -1,2 +1,3 @@
 boards:
     atmega328p: 9 #:<address>
+    LPC2148: 9
